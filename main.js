@@ -23,40 +23,41 @@ for (var i = 0; i < document.getElementsByTagName('div').length; i++) {
     div[i].style.marginBottom = "-5px";
 }
 
+var backgroundArray = ['blue', 'red', 'yellow', 'green', 'black', 'hotpink', 'teal', 'aqua', 'lightgreen', 'white'];
 
-// var clickPixel = document.querySelectorAll('div');
-// clickPixel.addEventListener("click", function() {
-//     clickPixel.style.backgroundColor = "red";
-// });
+for (var i = 0; i < backgroundArray.length; i++) {
+    var colorPallete = document.createElement('div');
+    colorPallete.className = "colorChoose";
+    colorPallete.style.height = "30px";
+    colorPallete.style.width = "30px";
+    colorPallete.style.display = "inline-block";
+    colorPallete.style.border = "1px solid black";
+    colorPallete.style.backgroundColor = backgroundArray[i];
+    section[0].appendChild(colorPallete);
+    if (backgroundArray[i] === 'white') {
+        colorPallete.style.background = "url(images/eraser.jpg)";
+    }
+}
 
+// var colorPallete2 = document.createElement('div');
+// colorPallete2.className = "colorChoose";
+// colorPallete2.style.height = "30px";
+// colorPallete2.style.width = "30px";
+// colorPallete2.style.backgroundColor = "red";
+// colorPallete2.style.display = "inline-block";
+// colorPallete.style.border = "1px solid black";
 
-var colorPallete = document.createElement('div');
-colorPallete.className = "colorChoose";
-colorPallete.style.height = "30px";
-colorPallete.style.width = "30px";
-colorPallete.style.backgroundColor = "blue";
-colorPallete.style.display = "inline-block";
-colorPallete.style.border = "1px solid black";
+// var colorPallete3 = document.createElement('div');
+// colorPallete3.className = "colorChoose";
+// colorPallete3.style.height = "30px";
+// colorPallete3.style.width = "30px";
+// colorPallete3.style.background = "url(images/eraser.jpg)";
+// colorPallete3.style.display = "inline-block";
+// colorPallete3.style.border = "1px solid black";
 
-var colorPallete2 = document.createElement('div');
-colorPallete2.className = "colorChoose";
-colorPallete2.style.height = "30px";
-colorPallete2.style.width = "30px";
-colorPallete2.style.backgroundColor = "red";
-colorPallete2.style.display = "inline-block";
-colorPallete.style.border = "1px solid black";
-
-var colorPallete3 = document.createElement('div');
-colorPallete3.className = "colorChoose";
-colorPallete3.style.height = "30px";
-colorPallete3.style.width = "30px";
-colorPallete3.style.background = "url(images/eraser.jpg)";
-colorPallete3.style.display = "inline-block";
-colorPallete3.style.border = "1px solid black";
-
-section[0].appendChild(colorPallete);
-section[0].appendChild(colorPallete2);
-section[0].appendChild(colorPallete3);
+// section[0].appendChild(colorPallete);
+// section[0].appendChild(colorPallete2);
+// section[0].appendChild(colorPallete3);
 
 var colorChoose = document.getElementsByClassName('colorChoose');
 var colorChosen = "red";
