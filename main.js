@@ -62,7 +62,6 @@ var colorChoose = document.getElementsByClassName('colorChoose');
 var colorChosen = "red";
 function colorChooser (event) {
         colorChosen = this.style.backgroundColor;
-        console.log(colorChosen);
 }
 
 for (var i = 0; i < colorChoose.length; i++) {
