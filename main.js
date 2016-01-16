@@ -39,26 +39,6 @@ for (var i = 0; i < backgroundArray.length; i++) {
     }
 }
 
-// var colorPallete2 = document.createElement('div');
-// colorPallete2.className = "colorChoose";
-// colorPallete2.style.height = "30px";
-// colorPallete2.style.width = "30px";
-// colorPallete2.style.backgroundColor = "red";
-// colorPallete2.style.display = "inline-block";
-// colorPallete.style.border = "1px solid black";
-
-// var colorPallete3 = document.createElement('div');
-// colorPallete3.className = "colorChoose";
-// colorPallete3.style.height = "30px";
-// colorPallete3.style.width = "30px";
-// colorPallete3.style.background = "url(images/eraser.jpg)";
-// colorPallete3.style.display = "inline-block";
-// colorPallete3.style.border = "1px solid black";
-
-// section[0].appendChild(colorPallete);
-// section[0].appendChild(colorPallete2);
-// section[0].appendChild(colorPallete3);
-
 var colorChoose = document.getElementsByClassName('colorChoose');
 var colorChosen = "red";
 function colorChooser (event) {
