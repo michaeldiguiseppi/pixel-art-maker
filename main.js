@@ -21,7 +21,10 @@ for (var i = 0; i < document.getElementsByTagName('div').length; i++) {
     div[i].style.border = "1px solid black";
     div[i].style.display = "inline-block"
     div[i].style.marginBottom = "-5px";
+    div[i].className = "whitePixel";
 }
+
+
 
 var backgroundArray = ['blue', 'red', 'yellow', 'green', 'black', 'hotpink', 'teal', 'aqua', 'lightgreen', 'white'];
 
@@ -60,6 +63,14 @@ for (var i = 0; i < clickPixel.length; i++) {
 }
 
 
+var divButtons = document.getElementsByClassName('whitePixel');
+
+var clear = document.getElementById('clear');
+clear.addEventListener('click', function() {
+    for (var i = 0; i < divButtons.length; i++) {
+        divButtons[i].style.backgroundColor = "white";
+    };
+});
 
 
 
